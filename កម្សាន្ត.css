@@ -1,0 +1,760 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.full-header-container{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+.header-container{
+    width: 75%;
+    margin: 0 auto;
+    /* background-color: green; */
+    height: 130px;
+}
+.header-container img{
+    height: 80%;
+    margin-top: 12px;
+}
+
+.menu-container-full{
+    width: 100%;
+    background-color: red;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+.menu-container{
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+.menu-container ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-container ul li{
+    float:  left;
+}
+.menu-container ul li a{
+    display: block;
+    padding: 18px 25px;
+    text-decoration: none;
+    color: white;
+    font-family: "Koulen", serif;
+    opacity: 0.8;
+}
+.menu-container ul li a:hover{
+    opacity: 1;
+}
+
+.homepage-container{
+    width: 75%;
+    margin: auto;
+    height: 550px;
+    /* background-color: black; */
+    margin-top: 20px;
+}
+.homepage-hot-news{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(180, 20, 20);
+    float: left;
+}
+
+.homepage-ads{
+    width: 29%;
+    margin-left: 1%;
+    float: left;
+    background-color: rgb(20, 161, 27);
+    height: 100%;
+}
+.homepage-ads .ads1{
+    height: 50%;
+    width: 100%;
+    background-color: chocolate;
+}
+.homepage-ads .ads2{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(13, 59, 174);
+}
+
+.homepage-ads .ads1 img,.ads2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.homepage-hot-news .box-content{
+    width: 60%;
+    height:50% ;
+    background-color: burlywood;
+    float: left;
+    background-image: url('img/2.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.homepage-hot-news .box-content:nth-child(2){
+    width: 40%;
+    background-color: black;
+    background-image: url('img/1.jpg');
+}
+.homepage-hot-news .box-content:nth-child(3){
+    background-image: url('img/3.jpg');
+}
+
+.homepage-hot-news .box-content:nth-child(4){
+    width: 40%;
+    background-image: url('img/4.jpg');
+}
+.box-content .blur-bg{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.514);
+    transition: 0.5s;
+    position: relative;
+}
+.box-content:hover .blur-bg{
+    display: block;
+    position: relative;
+
+}
+
+.box-content .title{
+    width: 70px;
+    height: 30px;
+    background-color: green;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    transform: translateY(20px);
+    justify-content: center;
+    align-items: center;
+    font-family: "Battambang", serif;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.box-content .title p{
+    font-size: 17px;
+    color: white;transform: translateX(-5px);
+}
+.box-content h3{
+    position: absolute;
+    color: white;
+    font-family: "Battambang", serif;
+    z-index: 1;
+    margin:0px 20px;
+    transform: translateY(200px);
+    line-height: 25px;
+    transition: 0.7s;
+}
+
+.box-content:hover h3{
+    transform: translateY(150px);
+}
+
+.box-content h3 span {
+    display: none;
+    font-size: 14px;
+
+}
+.box-content:hover h3 span{
+    display: block;
+}
+
+.vod-content-container{
+    width: 75%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.sub-titile{
+    width: 100%;
+    height: 60px;
+    border-bottom: 4px solid red;
+}
+.sub-titile .box-title{
+    width: 110px;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.sub-titile .box-title p{
+    font-family: "Koulen", serif;
+    font-size: 20px;
+    color: white;
+    transform: translateX(-5px);
+}
+
+.content-news{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(247, 245, 242);
+    padding-top: 20px;
+    box-shadow: 2px 2px 3px rgb(46, 25, 25);
+}
+
+.content-news .top-news{
+    width: 95%;
+    margin: auto;
+    height: 40%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.content-news .top-news .item-news{
+    width: 33%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+.content-news .top-news .item-news .pic{
+    width: 100%;
+    height: 75%;
+    /* background-color: brown; */
+    overflow: hidden;
+}
+
+.content-news .top-news .item-news .title{
+    width: 100%;
+    height: 25%;
+    /* background-color: rgb(228, 207, 207); */
+}
+.content-news .top-news .item-news .pic img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.content-news .top-news .item-news .title h3{
+    font-family: "Battambang", serif;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content-news .top-news .item-news .pic img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+.bottom-news{
+    width: 95%;
+    margin: auto;
+    height:60% ;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.small-item-news{
+    width: 19%;
+    height: 49%;
+    /* background-color: green; */
+}
+.small-item-news .pic{
+    width: 100%;
+    height: 70%;
+    /* background-color: brown; */
+    overflow: hidden;
+}
+.small-item-news .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.small-item-news .title{
+    width: 100%;
+    height: 30%;
+    /* background-color: grey; */
+    overflow: hidden;
+}
+
+.small-item-news .title h3{
+    font-family: "Battambang", serif;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.small-item-news .pic img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.komsan-content{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(234, 240, 223);
+    padding: 25px 0px;
+    
+}
+.komsan-item-container{
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    background-color: rgb(255, 252, 252);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.komsan-item-container .left-content{
+    width: 33%;
+    height: 100%;
+    /* background-color: red; */
+}
+.komsan-item-container .right-content{
+    width: 65%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.komsan-item-container .left-content .pic{
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+}
+.komsan-item-container .left-content .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.komsan-item-container .left-content .title{
+    width: 100%;
+    height: 35%;
+    overflow: hidden;
+}
+.komsan-item-container .left-content .pic img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.komsan-item-container .left-content .title h3{
+    font-family: "Battambang", serif;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.right-content{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.right-content .small-item{
+    width: 24%;
+    height: 49%;
+    /* background-color: violet; */
+}
+
+.right-content .small-item .pic{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.right-content .small-item .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.right-content .small-item .title{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.right-content .small-item .title h3{
+    font-family: "Battambang", serif;
+    font-size: 12px;
+    margin-top: 0px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}    
+
+.right-content .small-item .pic img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*-- footer---*/
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    margin-top: 90px;
+    overflow: hidden;
+}
+.footer .box1{
+    width: 30%;
+    height: 100%;
+   /* background-color: red;*/
+    padding: 2%;
+    float: left;
+    
+}
+.footer .box1 .box-for-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /*background-color: black;*/
+    margin-left: 70px;
+    
+}
+.footer .box1 .box-for-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+    
+}
+.footer .box1 .box-for-logo p{
+    height: 40%;
+    width:300px;
+    float: left;
+    font-family: "Khmer", serif;
+    font-size: 15px;
+    color:  rgb(142, 139, 139);
+    transform: translateY(-px);
+    line-height: 2; 
+}
+.footer .box1 .box-for-logo p span{
+    color: rgb(231, 224, 224);
+}
+.footer .box2{
+    width: 30%;
+    height: 100%;
+   /* background-color: rgb(227, 10, 162);*/
+    padding: 2%;
+    float: left;
+}
+.footer .box2 h4{
+    font-family:"Koulen", serif;
+    color:  rgb(142, 139, 139);
+    font-size: 20px;
+}
+.footer .box2  p{
+    height: 40%;
+    width:300px;
+    float: left;
+    font-family: "Khmer", serif;
+    font-size: 15px;
+    color:  rgb(142, 139, 139);
+    transform: translateY(-px);
+    line-height: 1.5; 
+} 
+.footer .box2  p:hover{
+    color: rgb(181, 176, 176);
+}
+.footer .box2 .footer2 {
+margin-top: -50px;
+/*background-color: #333;*/
+padding: 20px;
+text-align: center;
+float: left;
+width: 100%;
+height: 100px;
+/*background-color: black;*/
+}
+
+.footer .box2 .footer2 .footer-content {
+display: flex;
+justify-content: flex-start;
+gap: 20px;
+float: left;
+}
+
+.footer-image {
+width: 35px; /* Adjust the width of your images */
+height: auto;
+border-radius: 15px; /* Optional: For rounded corners */
+transition: transform 0.3s ease;
+}
+
+.footer-image:hover {
+transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.footer .box3{
+    width: 28%;
+    height: 100%;
+    background-color: black;
+    padding: 2%;
+    float: left;
+}
+.box3 h5{
+    font-family:"Koulen", serif;
+    color:  rgb(142, 139, 139);
+    font-size: 20px;
+}
+.box3 p{
+    float: left;
+    font-family: "Khmer", serif;
+    font-size: 15px;
+    color:  rgb(142, 139, 139);
+    transform: translateY(40px);
+    line-height: 1.5; 
+}
+.box3 span{
+    color: rgb(202, 193, 193);
+}
+.box3 .icon{
+position: relative;
+padding: 10px;
+text-align: center;
+float: left;    
+transition: 0.2s ease;
+object-fit: contain;
+
+}
+.box3 .icon .icon-content{
+position: absolute;
+display: flex;
+justify-content: flex-start;
+gap: 10px;
+float: left;
+font-size: 25px;
+object-fit: cover;
+z-index: 1;
+color: rgb(115, 114, 114);
+
+}
+
+.komsan-container{
+    width: 75%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+}
+.komsan-content-news{
+    width: 70%;
+    overflow: hidden;
+    float: left;
+    /* height: 300px; */
+    /* background-color: burlywood; */
+}
+
+
+.titleofcontainer{
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    border-bottom: 3px solid rgb(245, 172, 184);;
+
+}
+.titleofcontainer .box-desc{
+    width: 100px;
+    height: 100%;
+    background-color: rgb(245, 172, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.titleofcontainer .box-desc p{
+    font-family: "Koulen", serif;
+    font-size: 18px;
+    color: white;
+    transform: translateX(-6px);
+ }
+
+.Entertainment-content{
+    width: 100%;
+    overflow: hidden; 
+    padding: 20px 0px;
+    background-color: rgb(245, 241, 237);
+}
+
+.top-item-news{
+    width: 95%;
+    margin: auto;
+    height: 300px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item-newsOne{
+    width: 49%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.item-newsOne .pic{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+.item-newsOne .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.item-newsOne .description{
+    width: 100%;
+    height: 30%;
+}
+.item-newsOne .description p{
+    font-family: "Battambang", serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: black;
+    opacity: 0.7;
+    padding: 10px;
+}
+.item-newsOne .pic img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.komsan-row-items{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.komsan-row-items .box-news{
+    width: 100%;
+    height: 200px;
+    /* background-color: darkblue; */
+    margin-top: 10px;
+}
+
+.komsan-row-items .box-news .pic{
+    width: 30%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.komsan-row-items .box-news .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.komsan-row-items .box-news .pic img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.komsan-row-items .box-news .description{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.komsan-row-items .box-news .description p{
+    font-family: "Battambang", serif;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.komsan-row-items .box-news .description p:last-child{
+    font-size: 14px;
+}
+.komsan-row-items .box-news .description small{
+    font-family: "Battambang", serif;
+    margin-left: 20px;
+    color: rgba(209, 122, 122, 0.843);
+    opacity: 0.7;
+}
+.komsan-row-items .box-news .description hr{
+    margin-left: 20px;
+}
+.popular-content{
+    width: 29%;
+    /* min-height: 100vh; */
+    float: left;
+    background-color: black;
+    margin-left: 1%;
+    height: 300px;
+}
+.popular-content .Komsan-ads{
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+.popular-content .Komsan-ads img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.komsan-popular{
+    width: 100%;
+    height: 300px;
+    /* background-color: yellowgreen; */
+    float: left;
+}
+
+.komsan-popular .Title{
+    width: 100%;
+    height: 40px;
+    /* background-color: blue; */
+}
+.komsan-popular .Title  h1{
+    font-family: "Koulen", serif;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.komsan-popular .box-small-items{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    background-color: rgba(238, 239, 235, 0.529);
+    padding: 1%;
+}
+.komsan-popular .box-small-items .image{
+    width: 20%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    overflow: hidden;
+}
+.komsan-popular .box-small-items .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.komsan-popular .box-small-items .Sub-title{
+    width: 70%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.komsan-popular .box-small-items .Sub-title p{
+    font-family: "Battambang", serif;
+    font-size: 15px;
+    line-height: 23px;
+    margin-left: 10px;
+    margin-top: 0px;
+    line-height: 25px;
+}
